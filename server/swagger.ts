@@ -41,7 +41,7 @@ const options = {
             phone: { type: 'string', example: '(+880) 1521323549' },
             github: { type: 'string', example: 'https://github.com/vinay-ghate' },
             linkedin: { type: 'string', example: 'https://linkedin.com/in/vinay-ghate' },
-            location: { type: 'string', example: 'Dhaka, Bangladesh' },
+            location: { type: 'string', example: 'Mumbai, India' },
             avatarUrl: { type: 'string', example: '/images/profile.jpg' },
             resumeUrl: { type: 'string', example: 'http://v1nay.is-a.dev/' }
           }

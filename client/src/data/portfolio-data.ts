@@ -38,7 +38,7 @@ export const portfolioData = {
     phone: "(+880) 1521323549",
     github: "https://github.com/vinay-ghate",
     linkedin: "https://linkedin.com/in/vinay-ghate",
-    location: "Dhaka, Bangladesh",
+    location: "Mumbai, India",
     avatarUrl: assetUrl("images/profile_re.webp"),
     resumeUrl: "http://v1nay.is-a.dev/",
     facebook: "http://v1nay.is-a.dev/",

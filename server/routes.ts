@@ -153,7 +153,7 @@ async function seedDatabase() {
       phone: "(+880) 1521323549",
       github: "https://github.com/vinay-ghate",
       linkedin: "https://linkedin.com/in/vinay-ghate",
-      location: "Dhaka, Bangladesh",
+      location: "Mumbai, India",
       avatarUrl: "/images/profile.jpg",
       resumeUrl: "http://v1nay.is-a.dev/"
     });

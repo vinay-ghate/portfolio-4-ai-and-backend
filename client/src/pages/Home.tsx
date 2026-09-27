@@ -73,7 +73,7 @@ export default function Home() {
 
         {/* ============ HERO ============ */}
         <section id="hero" className="relative min-h-[92dvh] flex items-center pt-28 pb-16">
-          <div className="w-full grid lg:grid-cols-[minmax(0,7fr)_minmax(0,4fr)] gap-12 items-center">
+          <div className="w-full max-w-3xl">
             <motion.div
               initial={{ opacity: 0, y: 26 }}
               animate={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ export default function Home() {
             >
               <p className="inline-flex items-center gap-2.5 mono-label !text-[13px] md:!text-sm font-semibold text-accent border border-primary/50 bg-primary/10 rounded-full px-5 py-2.5 mb-6 tracking-wide">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" aria-hidden="true" />
-                AI/ML ENGINEER &middot; DHAKA, BANGLADESH
+                AI/ML ENGINEER &middot; MUMBAI, INDIA
               </p>
               <div className="flex items-center gap-3 sm:gap-6">
                 <DrawnName />
@@ -157,42 +157,6 @@ export default function Home() {
                 </a>
               </div>
             </motion.div>
-
-            {/* Portrait */}
-            <motion.figure
-              initial={canAnimate ? { opacity: 0 } : false}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.4 }}
-              className="justify-self-center lg:justify-self-end w-full max-w-[280px] lg:max-w-[360px] mt-4 lg:mt-0"
-            >
-              <div className="relative group">
-                {/* Static editorial frame: offset block + accent corner ticks.
-                    NOTE: the clip-wipe lives on the <img> only - a clip-path on
-                    the figure would permanently clip the frame outside its box. */}
-                <span aria-hidden="true" className="absolute inset-0 translate-x-3 translate-y-3 border border-primary/40 transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2" />
-                <span aria-hidden="true" className="absolute -top-2 -left-2 w-6 h-6 border-t-2 border-l-2 border-primary" />
-                <span aria-hidden="true" className="absolute -top-2 -right-2 w-6 h-6 border-t-2 border-r-2 border-primary" />
-                <span aria-hidden="true" className="absolute -bottom-2 -left-2 w-6 h-6 border-b-2 border-l-2 border-primary" />
-                <span aria-hidden="true" className="absolute -bottom-2 -right-2 w-6 h-6 border-b-2 border-r-2 border-primary" />
-                <motion.img
-                  src={personalInfo.avatarUrl}
-                  alt={personalInfo.name}
-                  loading="eager"
-                  decoding="async"
-                  {...FETCH_PRIORITY_HIGH}
-                  width={800}
-                  height={800}
-                  initial={canAnimate ? { clipPath: "inset(0 100% 0 0)" } : false}
-                  animate={canAnimate ? { clipPath: "inset(0 0% 0 0)" } : undefined}
-                  transition={{ duration: 1, delay: 0.5, ease }}
-                  className="relative w-full aspect-square object-cover grayscale contrast-[1.04] group-hover:grayscale-0 transition-all duration-700"
-                />
-              </div>
-              <figcaption className="mono-label text-muted-foreground mt-4 flex justify-between">
-                <span>DHAKA &middot; UTC+6</span>
-                <span>EST. 2021</span>
-              </figcaption>
-            </motion.figure>
           </div>
 
           <a
