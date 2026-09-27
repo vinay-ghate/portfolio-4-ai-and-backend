@@ -47,10 +47,13 @@ jobs:
           VITE_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID || secrets.VITE_GOOGLE_ANALYTICS_ID || 'G-XXXXXXXXXX' }}
           VITE_SENTRY_DSN: ${{ secrets.SENTRY_DSN || secrets.VITE_SENTRY_DSN || '' }}
           VITE_APP_VERSION: ${{ github.sha }}
+          VITE_BASE_PATH: /portfolio-4-ai-and-backend/
         run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

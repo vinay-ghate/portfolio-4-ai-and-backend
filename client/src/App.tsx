@@ -1,6 +1,6 @@
 import { Suspense, lazy, useEffect } from "react";
 import { MotionConfig } from "framer-motion";
-import { Switch, Route, useLocation } from "wouter";
+import { Switch, Route, useLocation, Router as WouterRouter } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -52,8 +52,9 @@ function Router() {
 }
 
 function AppContent() {
+  const base = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
   return (
-    <>
+    <WouterRouter base={base}>
       <AnalyticsPageView />
       <ScrollProgress />
       <Toaster />
@@ -62,7 +63,7 @@ function AppContent() {
         <Router />
       </ThemeProvider>
       <BackToTop />
-    </>
+    </WouterRouter>
   );
 }
 

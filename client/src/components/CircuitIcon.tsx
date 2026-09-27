@@ -154,9 +154,10 @@ export function AdminAltIcon({ on, label }: { on: boolean; label: string }) {
   );
 }
 
+const compMaskUrl = `url(${(import.meta.env.BASE_URL || "/").replace(/\/$/, "")}/icons/computer-mono.png)`;
 const COMP_MASK: CSSProperties = {
-  WebkitMaskImage: "url(/icons/computer-mono.png)",
-  maskImage: "url(/icons/computer-mono.png)",
+  WebkitMaskImage: compMaskUrl,
+  maskImage: compMaskUrl,
   WebkitMaskSize: "contain",
   maskSize: "contain",
   WebkitMaskRepeat: "no-repeat",

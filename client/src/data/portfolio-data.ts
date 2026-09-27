@@ -26,6 +26,8 @@ export const heroPhrases = [
   "Shipping fast interfaces with measurable impact",
 ];
 
+const assetUrl = (p: string) => `${(import.meta.env.BASE_URL || "/").replace(/\/$/, "")}/${p.replace(/^\//, "")}`;
+
 export const portfolioData = {
   personalInfo: {
     id: 1,
@@ -37,7 +39,7 @@ export const portfolioData = {
     github: "https://github.com/vinay-ghate",
     linkedin: "https://linkedin.com/in/vinay-ghate",
     location: "Dhaka, Bangladesh",
-    avatarUrl: "/images/profile_re.webp",
+    avatarUrl: assetUrl("images/profile_re.webp"),
     resumeUrl: "http://v1nay.is-a.dev/",
     facebook: "http://v1nay.is-a.dev/",
     instagram: "http://v1nay.is-a.dev/",
@@ -409,7 +411,7 @@ export const portfolioData = {
       id: 1,
       title: "The System Design Decisions Behind Big Tech Stacks",
       description: "System design lessons from Uber, Netflix, Stripe, and other tech giants. A practical breakdown of distributed systems, cloud-native infrastructure, high-performance backends, and the trade-offs tech leads must understand.",
-      thumbnail: "/images/blog-system-design-big-tech.jpg",
+      thumbnail: assetUrl("images/blog-system-design-big-tech.jpg"),
       thumbnailWidth: 1024,
       thumbnailHeight: 572,
       externalLink: "http://v1nay.is-a.dev/",
@@ -421,7 +423,7 @@ export const portfolioData = {
       id: 2,
       title: "LLM Latency in Production (Part 1) — Model-Level Optimization",
       description: "A tech lead's playbook for reducing LLM inference latency in production. Part 1 focuses on model-level optimization: GPU bottlenecks, memory bandwidth limits, quantization (INT8/INT4), Flash Attention, and vLLM internals.",
-      thumbnail: "/images/blog-llm-latency-production.jpg",
+      thumbnail: assetUrl("images/blog-llm-latency-production.jpg"),
       thumbnailWidth: 1024,
       thumbnailHeight: 572,
       externalLink: "http://v1nay.is-a.dev/",
@@ -433,7 +435,7 @@ export const portfolioData = {
       id: 3,
       title: "How to Use, Optimize and Serve an LLM in Your Production System",
       description: "An end-to-end guide covering the full lifecycle of deploying LLMs in production: model selection, quantization and pruning strategies, inference optimization, and high-performance serving with vLLM and ONNX Runtime.",
-      thumbnail: "/images/blog-llm-production-system.webp",
+      thumbnail: assetUrl("images/blog-llm-production-system.webp"),
       thumbnailWidth: 1200,
       thumbnailHeight: 670,
       externalLink: "http://v1nay.is-a.dev/",
@@ -445,7 +447,7 @@ export const portfolioData = {
       id: 4,
       title: "LLM Latency in Production (Part 2) — Serve-Level Speed",
       description: "Part 2 of the LLM latency series. Covers serve-level architecture: request batching, async queuing, load balancing, and system design patterns that stabilize P95/P99 tail latency in production LLM services.",
-      thumbnail: "/images/blog-llm-latency-serve.webp",
+      thumbnail: assetUrl("images/blog-llm-latency-serve.webp"),
       thumbnailWidth: 1200,
       thumbnailHeight: 670,
       externalLink: "http://v1nay.is-a.dev/",
@@ -457,7 +459,7 @@ export const portfolioData = {
       id: 5,
       title: "LLM Latency in Production (Part 3) — Engine-Level Runtime Selection",
       description: "Part 3 of the LLM latency series. A deep dive into inference engine selection — vLLM, TensorRT-LLM, ONNX Runtime — and how choosing the right runtime gives you throughput, latency, and hardware efficiency for free.",
-      thumbnail: "/images/blog-llm-latency-engine.webp",
+      thumbnail: assetUrl("images/blog-llm-latency-engine.webp"),
       thumbnailWidth: 1200,
       thumbnailHeight: 800,
       externalLink: "http://v1nay.is-a.dev/",

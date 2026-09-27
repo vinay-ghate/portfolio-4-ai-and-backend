@@ -34,9 +34,10 @@ import { scrollToSection } from "@/lib/scroll-to";
 const IMG_ASPECT_RATIO = "1536 / 1024";
 
 // Mask props kept in one object so the spans stay readable.
+const brainMaskUrl = `url(${(import.meta.env.BASE_URL || "/").replace(/\/$/, "")}/neural-brain.png)`;
 const MASK_STYLE: React.CSSProperties = {
-  WebkitMaskImage: "url(/neural-brain.png)",
-  maskImage: "url(/neural-brain.png)",
+  WebkitMaskImage: brainMaskUrl,
+  maskImage: brainMaskUrl,
   WebkitMaskSize: "contain",
   maskSize: "contain",
   WebkitMaskRepeat: "no-repeat",

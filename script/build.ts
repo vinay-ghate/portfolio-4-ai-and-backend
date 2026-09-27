@@ -224,7 +224,7 @@ async function buildAll() {
     logLevel: "info",
   });
 
-  const mainBundleMatch = indexHtml.match(/src="\/(assets\/index-[^"]+\.js)"/);
+  const mainBundleMatch = indexHtml.match(/src="[^"]*?(assets\/index-[^"]+\.js)"/);
 
   if (!mainBundleMatch) {
     throw new Error("Could not locate the production JavaScript bundle in dist/public/index.html.");
