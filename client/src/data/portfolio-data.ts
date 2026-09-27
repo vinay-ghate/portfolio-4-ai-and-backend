@@ -1,0 +1,469 @@
+// Static portfolio data for GitHub Pages deployment
+export const educationData = [
+  { institution: "Ahsanullah University of Science and Technology (AUST)", degree: "Bachelor of Science in Computer Science & Engineering", period: "Apr 2016 – Jan 2021" },
+  { institution: "Hermann Gmeiner School, Mirpur", degree: "Higher Secondary Certificate (HSC)", period: "2013 – 2015" },
+  { institution: "Mirpur Bangla School & College", degree: "Secondary School Certificate (SSC)", period: "2003 – 2013" }
+];
+
+export const researchData = [
+  { title: "Bengali Intent Classification with Generative Adversarial BERT", authors: "Vinay Ghate (First Author)", venue: "IEEE Xplore", year: "2023", link: "http://v1nay.is-a.dev/" },
+  { title: "Design of an Arrhythmia Classification Algorithm Using 2-D Convolutional Neural Network", authors: "Vinay Ghate (First Author)", venue: "Undergraduate Thesis, AUST", year: "2021", link: "http://v1nay.is-a.dev/" }
+];
+
+export const interestsData = [
+  { icon: "\u26BD", title: "Football", desc: "I love watching and playing football whenever I can" },
+  { icon: "\uD83C\uDFAC", title: "Cinema & Series", desc: "A true cinefile who watches movies and series religiously" },
+  { icon: "\uD83D\uDCF8", title: "Photography", desc: "Passionate about art, especially photography and visual storytelling" },
+  { icon: "\u2708\uFE0F", title: "Travel", desc: "Always up for exploring new places and cultures" },
+  { icon: "\uD83C\uDFC6", title: "All Sports", desc: "Tennis, cricket, basketball, table tennis - I watch them all" },
+  { icon: "\uD83C\uDFB5", title: "Music", desc: "Music is a big part of my life and creative process" }
+];
+
+export const heroPhrases = [
+  "Building production-grade LLM systems",
+  "Designing resilient AI pipelines",
+  "Turning complex documents into useful data",
+  "Shipping fast interfaces with measurable impact",
+];
+
+export const portfolioData = {
+  personalInfo: {
+    id: 1,
+    name: "Vinay Ghate",
+    role: "AI/ML Engineer",
+    bio: "Senior AI/ML Engineer with 5+ years of experience building production AI systems across LLMs, RAG, document intelligence, and distributed services.",
+    email: "abir.aust.102@gmail.com",
+    phone: "(+880) 1521323549",
+    github: "https://github.com/vinay-ghate",
+    linkedin: "https://linkedin.com/in/vinay-ghate",
+    location: "Dhaka, Bangladesh",
+    avatarUrl: "/images/profile_re.webp",
+    resumeUrl: "http://v1nay.is-a.dev/",
+    facebook: "http://v1nay.is-a.dev/",
+    instagram: "http://v1nay.is-a.dev/",
+    medium: "http://v1nay.is-a.dev/",
+  },
+  experiences: [
+    {
+      id: 1,
+      title: "Senior Software Engineer (AI/ML)",
+      company: "Technonext",
+      period: "Jun 2025 – Present",
+      description: [
+        "CRM Platform - Built a multi-step agentic customer-care system with hybrid RAG, MCP-based tooling, contextual capability filtering, and cloud/local model fallbacks.",
+        "Tech: LangGraph, Hybrid RAG, MCP, OpenAI API, Gemini API, vLLM",
+        "Candidate Speech Assessment - Built a multi-tenant voice assessment pipeline with validated scoring, asynchronous job tracking, and scheduled processing.",
+        "Tech: Google Gemini 3.1 Pro, Pydantic, S3, PostgreSQL, Redis, RabbitMQ, Celery Beat",
+        "Food Delivery - Built a gRPC cuisine-prediction service with vector retrieval and Redis-powered personalization; optimized ONNX inference to 100 RPS on 2 vCPU.",
+        "Tech: gRPC, Sentence Transformers, FAISS, PostgreSQL, Redis, ONNX",
+        "E-commerce - Built visual product search with catalog ingestion, Kafka processing, Spark ETL, vector retrieval, and ranking.",
+        "Tech: CLIP, FAISS, Elasticsearch, Kafka, Apache Spark, ONNX, OpenVINO",
+        "Passport MRZ Scanner - Built a real-time extraction pipeline with micro-batching and CPU-isolated workers.",
+        "Tech: ONNX, Redis Streams, Python, Golang, Multiprocessing",
+        "Infrastructure - Deployed and monitored production services with containerization, orchestration, CI/CD, and automated scaling.",
+        "Tech: Docker, Docker Compose, Kubernetes, GitHub Actions, Prometheus, Grafana",
+      ],
+    },
+    {
+      id: 2,
+      title: "Senior AI Engineer",
+      company: "Next Solution Lab",
+      period: "Jun 2023 – Jun 2025",
+      description: [
+        "Led English DeepICR for contracts and invoices, covering text detection, layout detection, recognition, and data extraction with noise, handwriting, and spell-correction handling.",
+        "Tech: Mask R-CNN, OpenCV, YOLOv7, DBNet, RCNN+Attention, LCNN, LayoutLM, BROS",
+        "Optimized training and inference through fine-tuning, parallel processing, multi-GPU training, and PDF batching.",
+        "Tech: PyTorch DDP, CUDA, cuDNN, joblib, Keras, TensorFlow",
+        "Standardized evaluation reports, packaged services, and managed deployments and monitoring.",
+        "Tech: XlsxWriter, pandas, Docker, Node.js, React, AWS, Elasticsearch, CloudWatch",
+        "Built LoRA/PEFT LLM adaptation workflows and inference acceleration pipelines.",
+        "Tech: HuggingFace Transformers, TRL, BitsAndBytes, ONNX",
+        "Built a Japanese legal RAG system with memory and inference caching for conversational Q&A.",
+        "Tech: LangChain, ChromaDB, Elasticsearch, FastAPI",
+      ],
+    },
+    {
+      id: 3,
+      title: "AI Engineer",
+      company: "Next Solution Lab",
+      period: "Jun 2022 – Jun 2023",
+      description: [
+        "Built a Japanese text-recognition training pipeline with augmentation, evaluation, automated reporting, and ~5,000-character coverage.",
+        "Tech: RCNN+CTC",
+        "Trained and tested English DeepICR models on new datasets each sprint and standardized onboarding and regression tests.",
+        "Built DocQA for contracts and invoices.",
+        "Tech: BERT, RoBERTa, Flask, Streamlit",
+        "Implemented multilingual OCR for Arabic, Vietnamese, Thai, and Indonesian documents.",
+        "Tech: Google Vision API",
+        "Evaluated deepfake detection, speech-to-text/text-to-speech, and speaker-verification approaches.",
+        "Tech: FastAPI, NVIDIA NeMo",
+      ],
+    },
+    {
+      id: 4,
+      title: "Associate AI Engineer",
+      company: "Next Solution Lab",
+      period: "Jun 2021 – Jun 2022",
+      description: [
+        "Built a deterministic key-value extraction module for 128 fields across 44 document clusters; authored SRS and test plans.",
+        "Tech: OpenCV, REST API",
+        "Developed a camera-only cattle-monitoring proof of concept under a no-RFID policy.",
+        "Tech: Detectron2, SORT",
+        "Implemented driving-licence extraction.",
+        "Tech: YOLOv5, FastAPI, Streamlit",
+      ],
+    },
+  ],
+  projects: [
+    {
+      id: 1,
+      title: "Agami Assistant - Voice-First Enterprise AI Assistant",
+      description:
+        "Voice-first enterprise assistant providing grounded spoken answers from product catalogs, policies, and IT records, with live transcripts and captions.",
+      techStack: [
+        "FastAPI",
+        "Next.js",
+        "Pydantic AI",
+        "Gemini Embeddings",
+        "FAISS",
+        "Groq",
+        "SSE",
+        "PyO3/Rust",
+        "ASR/TTS",
+        "Render",
+      ],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 2,
+      title: "Search Microservice - High-Performance Product Discovery",
+      description:
+        "Typo-tolerant product discovery for 1M products and ~29K brands; reached 179 QPS at 3.17 ms P95 for warm traffic and 1,046 QPS under concurrent load.",
+      techStack: [
+        "Python",
+        "FastAPI",
+        "gRPC",
+        "OpenSearch",
+        "PostgreSQL",
+        "Redis",
+        "Nginx",
+        "Docker Compose",
+        "k6",
+        "Prometheus",
+      ],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 3,
+      title: "Shorol Notes — AI-Powered Note-Taking",
+      description:
+        "Voice notes with AI transcription and summarization; calendar sync with Bangla-first UX. Pluggable backends supporting OpenAI, Ollama, and Hugging Face models.",
+      techStack: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Node.js",
+        "Express",
+        "TailwindCSS",
+        "OpenAI API",
+        "Hugging Face",
+        "Ollama",
+      ],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 4,
+      title: "Japanese Lawyer Assistant",
+      description:
+        "Legal Q&A over a Japanese corpus using RAG, FAISS retrieval, and an instruct LLM with a knowledge-base pipeline and custom prompts.",
+      techStack: [
+        "Python",
+        "LangChain",
+        "FAISS",
+        "FastAPI",
+        "ELYZA LLaMA-2",
+        "Hugging Face",
+      ],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 5,
+      title: "Outlet Fraud Detection - No-Label Verification Screening",
+      description:
+        "No-label fraud screening for outlet-verification photos. Every image is compared only against other photos from the same outlet — visually isolated shots and reused uploads get flagged with an evidence-based reason.",
+      techStack: [
+        "Python",
+        "Computer Vision",
+        "Image Embeddings",
+        "Docker",
+      ],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 6,
+      title: "Aethion RAG - Naive vs Streaming Retrieval Shootout",
+      description:
+        "Full-stack AI agent answering questions over company documents, comparing Naive RAG against StreamRAG — retrieval fired in parallel with generation and streamed to the user.",
+      techStack: [
+        "Python",
+        "RAG",
+        "Streaming",
+        "Rust",
+        "Docker",
+      ],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 7,
+      title: "AI Research Agent - Multi-Source LLM Assistant",
+      description:
+        "LLM research assistant and multi-source AI agent capable of answering complex research questions across sources.",
+      techStack: ["Python", "LLM Agents", "RAG"],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 8,
+      title: "ECG Arrhythmia Classification - 2-D CNN",
+      description:
+        "2-D convolutional classifier detecting arrhythmia from ECG beats through careful signal preprocessing and feature extraction.",
+      techStack: [
+        "Python",
+        "Deep Learning",
+        "CNN",
+        "VGGNet",
+        "Signal Processing",
+        "Jupyter",
+      ],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 9,
+      title: "ToLet Dhaka - Rental Listings",
+      description:
+        "Flat-renting website with property posts and contact details, enhanced with interactive elements.",
+      techStack: ["HTML5", "CSS", "PHP", "JavaScript"],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 10,
+      title: "School Management System",
+      description:
+        "School administration console for student records, classes, and fees.",
+      techStack: ["Java"],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 11,
+      title: "Bangla Alarm Clock",
+      description: "Alarm clock application with a Bangla interface.",
+      techStack: ["Java"],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 12,
+      title: "Dhaka City Bus Routes",
+      description:
+        "Route-finder Android app covering Dhaka city transit lines with map lookup.",
+      techStack: ["Java", "Google Maps API", "JSON"],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 13,
+      title: "Bank Management System",
+      description:
+        "Transactional banking features with account handling and balance tracking.",
+      techStack: ["Java", "Java GUI", "MySQL"],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 14,
+      title: "DX Ball Remastered",
+      description:
+        "Classic brick-breaker ball and paddle game with 4 new levels.",
+      techStack: ["C++"],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 15,
+      title: "Hospital Management",
+      description:
+        "Full-stack hospital management system with patient, doctor, and appointment workflows.",
+      techStack: ["ASP.NET MVC", "C#", "Razor"],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 16,
+      title: "Railway Station Management System",
+      description:
+        "Railway station records and scheduling with client-server components in PL/SQL.",
+      techStack: ["PL/SQL"],
+      link: "http://v1nay.is-a.dev/",
+    },
+    {
+      id: 17,
+      title: "BanglaNet - Handwritten Recognition",
+      description:
+        "Lightweight CNN recognizing 50 Bangla handwritten characters and 10 numerals for OCR-style digitization.",
+      techStack: ["Python", "CNN", "OCR"],
+      link: "http://v1nay.is-a.dev/",
+    },
+  ],
+  skills: [
+    {
+      id: 1,
+      category: "Programming",
+      items: [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "Golang",
+        "C#",
+        "Java",
+      ],
+    },
+    {
+      id: 2,
+      category: "ML & Deep Learning",
+      items: [
+        "PyTorch",
+        "TensorFlow",
+        "HuggingFace Transformers",
+        "ONNX Runtime",
+        "OpenVINO",
+        "YOLOv7",
+        "Mask R-CNN",
+        "LayoutLM",
+      ],
+    },
+    {
+      id: 3,
+      category: "LLMs & Agentic AI",
+      items: [
+        "LangGraph",
+        "vLLM",
+        "LangChain",
+        "RAG (Retrieval-Augmented Generation)",
+        "BGE / E5 Embeddings",
+        "Reranking",
+        "LoRA / PEFT",
+        "DPO",
+        "LLaMA 3",
+        "Gemma",
+        "Mistral",
+      ],
+    },
+    {
+      id: 4,
+      category: "Vector & Search",
+      items: [
+        "Qdrant",
+        "FAISS",
+        "Elasticsearch",
+        "ChromaDB",
+        "Hybrid Search (BM25 + Vector)",
+      ],
+    },
+    {
+      id: 5,
+      category: "Backend & Distributed Systems",
+      items: [
+        "FastAPI",
+        "gRPC",
+        "Kafka",
+        "Redis Streams",
+        "Microservices",
+        "Asyncio",
+        "PostgreSQL",
+        "MySQL",
+      ],
+    },
+    {
+      id: 6,
+      category: "Frontend",
+      items: [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Vite",
+        "Material-UI",
+      ],
+    },
+    {
+      id: 7,
+      category: "DevOps & Cloud",
+      items: [
+        "Kubernetes",
+        "Docker",
+        "AWS (EC2, ECS, S3, Lambda, ECR)",
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "CI/CD (GitHub Actions)",
+        "CloudWatch",
+      ],
+    },
+  ],
+  blogs: [
+    {
+      id: 1,
+      title: "The System Design Decisions Behind Big Tech Stacks",
+      description: "System design lessons from Uber, Netflix, Stripe, and other tech giants. A practical breakdown of distributed systems, cloud-native infrastructure, high-performance backends, and the trade-offs tech leads must understand.",
+      thumbnail: "/images/blog-system-design-big-tech.jpg",
+      thumbnailWidth: 1024,
+      thumbnailHeight: 572,
+      externalLink: "http://v1nay.is-a.dev/",
+      platform: "Substack",
+      date: "2026-01-07",
+      tags: ["System Design", "Software Architecture", "Tech Lead", "Distributed Systems", "Big Tech", "Scalability"]
+    },
+    {
+      id: 2,
+      title: "LLM Latency in Production (Part 1) — Model-Level Optimization",
+      description: "A tech lead's playbook for reducing LLM inference latency in production. Part 1 focuses on model-level optimization: GPU bottlenecks, memory bandwidth limits, quantization (INT8/INT4), Flash Attention, and vLLM internals.",
+      thumbnail: "/images/blog-llm-latency-production.jpg",
+      thumbnailWidth: 1024,
+      thumbnailHeight: 572,
+      externalLink: "http://v1nay.is-a.dev/",
+      platform: "Substack",
+      date: "2026-01-07",
+      tags: ["LLM", "Inference", "Latency", "GPU", "Quantization", "vLLM", "Production Systems"]
+    },
+    {
+      id: 3,
+      title: "How to Use, Optimize and Serve an LLM in Your Production System",
+      description: "An end-to-end guide covering the full lifecycle of deploying LLMs in production: model selection, quantization and pruning strategies, inference optimization, and high-performance serving with vLLM and ONNX Runtime.",
+      thumbnail: "/images/blog-llm-production-system.webp",
+      thumbnailWidth: 1200,
+      thumbnailHeight: 670,
+      externalLink: "http://v1nay.is-a.dev/",
+      platform: "Medium",
+      date: "2026-06-20",
+      tags: ["LLM", "Production Systems", "Optimization", "Inference", "MLOps", "vLLM", "ONNX"]
+    },
+    {
+      id: 4,
+      title: "LLM Latency in Production (Part 2) — Serve-Level Speed",
+      description: "Part 2 of the LLM latency series. Covers serve-level architecture: request batching, async queuing, load balancing, and system design patterns that stabilize P95/P99 tail latency in production LLM services.",
+      thumbnail: "/images/blog-llm-latency-serve.webp",
+      thumbnailWidth: 1200,
+      thumbnailHeight: 670,
+      externalLink: "http://v1nay.is-a.dev/",
+      platform: "Medium",
+      date: "2026-06-20",
+      tags: ["LLM", "Latency", "P95", "P99", "System Design", "Inference Serving", "Production Systems"]
+    },
+    {
+      id: 5,
+      title: "LLM Latency in Production (Part 3) — Engine-Level Runtime Selection",
+      description: "Part 3 of the LLM latency series. A deep dive into inference engine selection — vLLM, TensorRT-LLM, ONNX Runtime — and how choosing the right runtime gives you throughput, latency, and hardware efficiency for free.",
+      thumbnail: "/images/blog-llm-latency-engine.webp",
+      thumbnailWidth: 1200,
+      thumbnailHeight: 800,
+      externalLink: "http://v1nay.is-a.dev/",
+      platform: "Medium",
+      date: "2026-06-20",
+      tags: ["LLM", "Runtime", "vLLM", "TensorRT", "ONNX", "Inference Engine", "Production Systems"]
+    },
+  ],
+};

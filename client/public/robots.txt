@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://v1nay.is-a.dev/sitemap.xml
