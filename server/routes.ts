@@ -149,7 +149,7 @@ async function seedDatabase() {
       name: "Vinay Ghate",
       role: "AI/ML Engineer",
       bio: "Passionate AI Engineer specializing in LLMs, OCR, and Document Understanding. Experienced in building high-throughput inference pipelines and scalable ML systems.",
-      email: "abir.aust.102@gmail.com",
+      email: "vsg0131@gmail.com",
       phone: "(+880) 1521323549",
       github: "https://github.com/vinay-ghate",
       linkedin: "https://linkedin.com/in/vinay-ghate",

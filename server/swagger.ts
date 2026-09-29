@@ -10,7 +10,7 @@ const options = {
       description: 'API documentation for Vinay Ghate\'s AI/ML Engineer Portfolio',
       contact: {
         name: 'Vinay Ghate',
-        email: 'abir.aust.102@gmail.com',
+        email: 'vsg0131@gmail.com',
         url: 'https://github.com/vinay-ghate'
       },
       license: {
@@ -37,7 +37,7 @@ const options = {
             name: { type: 'string', example: 'Vinay Ghate' },
             role: { type: 'string', example: 'AI/ML Engineer' },
             bio: { type: 'string', example: 'Passionate AI Engineer...' },
-            email: { type: 'string', example: 'abir.aust.102@gmail.com' },
+            email: { type: 'string', example: 'vsg0131@gmail.com' },
             phone: { type: 'string', example: '(+880) 1521323549' },
             github: { type: 'string', example: 'https://github.com/vinay-ghate' },
             linkedin: { type: 'string', example: 'https://linkedin.com/in/vinay-ghate' },

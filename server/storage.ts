@@ -14,7 +14,7 @@ const MOCK_PERSONAL_INFO: any = {
   name: "Vinay Ghate",
   role: "AI/ML Engineer",
   bio: "AI/ML Engineer with expertise in document understanding, deep learning, and LLM applications. Experienced in building production-grade systems for text recognition, data extraction, and intelligent search.",
-  email: "abir.aust.102@gmail.com",
+  email: "vsg0131@gmail.com",
   phone: "(+880) 1521323549",
   github: "https://github.com/vinay-ghate",
   linkedin: "https://linkedin.com/in/vinay-ghate",

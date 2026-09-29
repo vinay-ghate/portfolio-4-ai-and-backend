@@ -34,7 +34,7 @@ export const portfolioData = {
     name: "Vinay Ghate",
     role: "AI/ML Engineer",
     bio: "Senior AI/ML Engineer with 5+ years of experience building production AI systems across LLMs, RAG, document intelligence, and distributed services.",
-    email: "abir.aust.102@gmail.com",
+    email: "vsg0131@gmail.com",
     phone: "(+880) 1521323549",
     github: "https://github.com/vinay-ghate",
     linkedin: "https://linkedin.com/in/vinay-ghate",
