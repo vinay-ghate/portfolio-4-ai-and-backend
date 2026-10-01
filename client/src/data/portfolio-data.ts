@@ -16,9 +16,11 @@ export const researchData: { title: string; authors: string; venue: string; year
 ];
 
 export const interestsData = [
-  { icon: "🤖", title: "Agentic Systems", desc: "Building MCP tool-using agents and LangGraph stateful workflows" },
-  { icon: "⚡", title: "RAG & Streaming", desc: "Optimizing semantic retrieval, vector search, and streaming event pipelines" },
-  { icon: "☁️", title: "Cloud & Kubernetes", desc: "Deploying high-throughput Kafka and microservices on production K8s" },
+  { icon: "🎬", title: "Cinema & Series", desc: "Passionate about watching movies and series" },
+  { icon: "📸", title: "Photography", desc: "Capturing visual stories, moments, and artistic perspectives" },
+  { icon: "✈️", title: "Travel", desc: "Exploring new places, landscapes, and diverse cultures" },
+  { icon: "🏆", title: "All Sports", desc: "Following and participating in diverse outdoor sports" },
+  { icon: "🎵", title: "Anime & Riding", desc: "Anime enthusiast, mountain trekking, trail exploring & long bike rides" },
 ];
 
 export const heroPhrases = [
@@ -51,7 +53,7 @@ export const portfolioData = {
     {
       id: 1,
       title: "System Engineer C1 (AI & Backend)",
-      company: "IT Services & Consulting Firm",
+      company: "Tata Consultancy Services",
       period: "Nov 2024 – Present",
       description: [
         "Cut project-context lookup time by 40% for 15+ engineers by building tool-using AI agents integrated with Confluence and Jira via MCP, rolling out developer CLI tools.",
@@ -67,7 +69,7 @@ export const portfolioData = {
     {
       id: 2,
       title: "Python Backend Engineering Intern",
-      company: "Software Product Studio",
+      company: "Scrobits Technologies",
       period: "Jun 2024 – Nov 2024",
       description: [
         "Delivered 5+ GenAI and RAG proof-of-concepts with LLM APIs for client projects, leading internal workshops on GenAI engineering.",

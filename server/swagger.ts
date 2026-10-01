@@ -51,10 +51,10 @@ const options = {
           properties: {
             id: { type: 'integer', example: 1 },
             title: { type: 'string', example: 'System Engineer C1 (AI & Backend)' },
-            company: { type: 'string', example: 'IT Services & Consulting Firm' },
+            company: { type: 'string', example: 'Tata Consultancy Services' },
             period: { type: 'string', example: 'Nov 2024 – Present' },
-            description: { 
-              type: 'array', 
+            description: {
+              type: 'array',
               items: { type: 'string' },
               example: ['Working on Ticket Parsing...', 'Built LLM-powered pipeline...']
             }
@@ -66,8 +66,8 @@ const options = {
             id: { type: 'integer', example: 1 },
             title: { type: 'string', example: 'Shorol Notes' },
             description: { type: 'string', example: 'AI-Powered Note-Taking...' },
-            techStack: { 
-              type: 'array', 
+            techStack: {
+              type: 'array',
               items: { type: 'string' },
               example: ['React', 'TypeScript', 'Node.js']
             },
@@ -79,8 +79,8 @@ const options = {
           properties: {
             id: { type: 'integer', example: 1 },
             category: { type: 'string', example: 'Programming' },
-            items: { 
-              type: 'array', 
+            items: {
+              type: 'array',
               items: { type: 'string' },
               example: ['Python', 'JavaScript', 'TypeScript']
             }
@@ -96,8 +96,8 @@ const options = {
             externalLink: { type: 'string', example: 'https://medium.com/...' },
             platform: { type: 'string', example: 'Medium' },
             date: { type: 'string', example: '2024-12-15' },
-            tags: { 
-              type: 'array', 
+            tags: {
+              type: 'array',
               items: { type: 'string' },
               example: ['AI', 'Document AI', 'Machine Learning']
             }
