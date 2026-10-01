@@ -12,140 +12,45 @@ import { eq } from "drizzle-orm";
 const MOCK_PERSONAL_INFO: any = {
   id: 1,
   name: "Vinay Ghate",
-  role: "AI/ML Engineer",
-  bio: "AI/ML Engineer with expertise in document understanding, deep learning, and LLM applications. Experienced in building production-grade systems for text recognition, data extraction, and intelligent search.",
-  email: "vsg0131@gmail.com",
-  phone: "(+880) 1521323549",
+  role: "AI & Backend Engineer",
+  bio: "Python AI engineer with 2 years of experience building agentic AI, LangGraph workflows, and RAG systems integrated with vector databases and production Kafka/Kubernetes foundations.",
+  email: "ghatevinay2@gmail.com",
   github: "https://github.com/vinay-ghate",
   linkedin: "https://linkedin.com/in/vinay-ghate",
-  location: "Mumbai, India",
+  location: "Pune, India",
   avatarUrl: "https://avatars.githubusercontent.com/u/76932315?v=4",
-  resumeUrl: "http://v1nay.is-a.dev/",
-  facebook: "http://v1nay.is-a.dev/",
-  instagram: "http://v1nay.is-a.dev/"
+  resumeUrl: "https://v1nay.is-a.dev"
 };
 
-const MOCK_BLOGS: any[] = [
-  {
-    id: 1,
-    title: "Building AI-Powered Document Understanding Systems",
-    description: "A comprehensive guide to implementing document AI solutions using modern machine learning techniques and transformer models.",
-    thumbnail: "/images/blog-document-ai.jpg",
-    externalLink: "http://v1nay.is-a.dev/",
-    platform: "Medium",
-    date: "2024-12-15",
-    tags: ["AI", "Document AI", "Machine Learning", "Transformers"]
-  },
-  {
-    id: 2,
-    title: "Optimizing LLM Inference for Production Workloads",
-    description: "Learn how to deploy large language models efficiently with vLLM, quantization, and optimization techniques.",
-    thumbnail: "/images/blog-llm-optimization.jpg",
-    externalLink: "http://v1nay.is-a.dev/",
-    platform: "Substack",
-    date: "2024-11-20",
-    tags: ["LLM", "vLLM", "Optimization", "Production"]
-  },
-  {
-    id: 3,
-    title: "RAG Systems: From Theory to Production",
-    description: "Implementing Retrieval-Augmented Generation systems with LangChain, vector databases, and real-world considerations.",
-    thumbnail: "/images/blog-rag-systems.jpg",
-    externalLink: "http://v1nay.is-a.dev/",
-    platform: "LinkedIn",
-    date: "2024-10-10",
-    tags: ["RAG", "LangChain", "Vector DB", "NLP"]
-  },
-  {
-    id: 4,
-    title: "Computer Vision in the Real World: Challenges and Solutions",
-    description: "Exploring practical applications of computer vision, from object detection to document processing.",
-    thumbnail: "/images/blog-computer-vision.jpg",
-    externalLink: "http://v1nay.is-a.dev/",
-    platform: "Medium",
-    date: "2024-09-05",
-    tags: ["Computer Vision", "YOLO", "OpenCV", "Deep Learning"]
-  },
-  {
-    id: 5,
-    title: "The Future of AI Engineering: Trends and Predictions",
-    description: "Thoughts on where AI engineering is headed and what skills will be most valuable in the coming years.",
-    thumbnail: "/images/blog-ai-future.jpg",
-    externalLink: "http://v1nay.is-a.dev/",
-    platform: "Substack",
-    date: "2024-08-15",
-    tags: ["AI", "Future", "Engineering", "Trends"]
-  },
-  {
-    id: 6,
-    title: "Building Scalable ML Pipelines with Docker and Kubernetes",
-    description: "A practical guide to containerizing machine learning workflows for production deployment.",
-    thumbnail: "/images/blog-ml-pipelines.jpg",
-    externalLink: "http://v1nay.is-a.dev/",
-    platform: "LinkedIn",
-    date: "2024-07-22",
-    tags: ["ML Pipelines", "Docker", "Kubernetes", "DevOps"]
-  },
-];
+const MOCK_BLOGS: any[] = [];
 
 const MOCK_EXPERIENCES: Experience[] = [
   {
     id: 1,
-    title: "Senior Software Engineer",
-    company: "Technonext",
-    period: "Jun 2025 – Present",
+    title: "System Engineer C1 (AI & Backend)",
+    company: "IT Services & Consulting Firm",
+    period: "Nov 2024 – Present",
     description: [
-      "Working on Ticket Parsing for airline/passenger documents with structured field extraction",
-      "Built local LLM-powered parsing pipeline using vLLM for high-throughput inference",
-      "Designed heuristic validation layer to reduce hallucinations and ensure schema-correct extraction",
-      "Tech: vLLM, Local LLM, RAG, Python, FastAPI"
+      "Cut project-context lookup time by 40% for 15+ engineers by building tool-using AI agents integrated with Confluence and Jira via MCP, rolling out developer CLI tools.",
+      "Tech: MCP, Tool Calling, LangGraph, Confluence API, Jira API, Python",
+      "Made 500+ team notes and documentation searchable through a RAG chat system with semantic retrieval.",
+      "Tech: RAG, ChromaDB, OpenAI Embeddings, Python, Vector Search",
+      "Deployed Strimzi Kafka on Kubernetes with Helm (1M+ events/sec), secured inter-service traffic with mTLS, and built Prometheus dashboards for observability.",
+      "Tech: Apache Kafka, Kubernetes, Helm, Strimzi, mTLS, Prometheus, Docker",
+      "Reduced event-handling latency by 70% and raised throughput 2x by implementing a caching layer for high-volume network events.",
+      "Tech: Python, Caching, Event-Driven Architecture, REST APIs"
     ]
   },
   {
     id: 2,
-    title: "Senior AI Engineer",
-    company: "Next Solution Lab",
-    period: "Jun 2023 – Jun 2025",
+    title: "Python Backend Engineering Intern",
+    company: "Software Product Studio",
+    period: "Jun 2024 – Nov 2024",
     description: [
-      "Led English DeepICR system for document understanding (contracts/invoices)",
-      "Built and trained Text Detection, Layout Detection, Text Recognition models",
-      "Tech: Mask R-CNN, OpenCV, YOLOv7, DBNet, LayoutLM, BROS",
-      "Optimized training and inference pipelines with PyTorch DDP and CUDA for improved throughput",
-      "Tech: PyTorch DDP, CUDA, cuDNN",
-      "Packaged services with Docker and managed deployment via AWS (EC2, S3, ECR, CloudWatch)",
-      "Implemented LoRA/PEFT-based LLM fine-tuning and inference acceleration pipelines",
-      "Tech: HuggingFace Transformers, BitsAndBytes, ONNX",
-      "Built RAG search system for Japanese legal documents with conversational Q&A",
-      "Tech: LangChain, ChromaDB, Elasticsearch, FastAPI"
-    ]
-  },
-  {
-    id: 3,
-    title: "AI Engineer",
-    company: "Next Solution Lab",
-    period: "Jun 2022 – Jun 2023",
-    description: [
-      "Built Japanese Text-recognition training pipeline with ~5,000-character coverage",
-      "Tech: RCNN+CTC",
-      "Trained and tested models for English DeepICR on new datasets every sprint",
-      "Developed DocQA system for Q&A on contracts and invoices",
-      "Tech: BERT, RoBERTa, Flask, Streamlit",
-      "Implemented Multilingual OCR for Arabic, Vietnamese, Thai, and Indonesian documents",
-      "Tech: Google Vision API, FastAPI, NVIDIA NeMo"
-    ]
-  },
-  {
-    id: 4,
-    title: "Associate AI Engineer",
-    company: "Next Solution Lab",
-    period: "Jun 2021 – Jun 2022",
-    description: [
-      "Built Key-Value Extraction Module with OpenCV rule engine extracting 128 fields",
-      "Tech: OpenCV, REST API",
-      "Developed Smart Farming POC for camera-only cattle monitoring",
-      "Tech: Detectron2, SORT",
-      "Implemented ID/OCR system for driving license extraction",
-      "Tech: YOLOv5, FastAPI, Streamlit"
+      "Delivered 5+ GenAI and RAG proof-of-concepts with LLM APIs for client projects, leading internal workshops on GenAI engineering.",
+      "Tech: LLM APIs, RAG, LangChain, Python, Prompt Engineering",
+      "Developed backend services and REST APIs for an AI-powered content system with automated webpage generation and publishing.",
+      "Tech: Django, REST APIs, Python, PostgreSQL"
     ]
   }
 ];
@@ -153,102 +58,65 @@ const MOCK_EXPERIENCES: Experience[] = [
 const MOCK_PROJECTS: Project[] = [
   {
     id: 1,
-    title: "Shorol Notes — AI-Powered Note-Taking",
-    description: "Voice notes with AI transcription and summarization; calendar sync with Bangla-first UX. Pluggable backends supporting OpenAI, Ollama, and Hugging Face models.",
-    techStack: ["React", "TypeScript", "Vite", "Node.js", "Express", "TailwindCSS", "OpenAI API"],
-    link: "http://v1nay.is-a.dev/"
+    title: "Nexyn - Cognitive Memory Middleware for AI Agents",
+    description: "Stateful memory middleware for AI agents featuring a four-layer pipeline (sensory buffer, evaluator, consolidator, decay). Leverages LLM scoring to decay trivial memories and reinforce recalled entries, improving recall relevance by 25%.",
+    techStack: ["Python", "FastAPI", "asyncio", "PostgreSQL", "Cognee", "NVIDIA NIM", "Llama 3.1"],
+    link: "https://github.com/vinay-ghate/nexyn-core"
   },
   {
     id: 2,
-    title: "AI-Powered Research Agent",
-    description: "ReAct-style tool-using agent with integrated search across PubMed, Wikipedia, ArXiv, and the web. Configurable prompts and models for diverse research queries.",
-    techStack: ["Python", "FastAPI", "LangChain", "Transformers", "SerpAPI"],
-    link: "http://v1nay.is-a.dev/"
+    title: "TalkWithDB - Agentic NL2SQL Engine",
+    description: "Autonomous agent executing natural language SQL queries on dynamic database schemas. Achieves 88% execution accuracy while cutting token usage by 35% and enforcing strict write-blocking guardrails.",
+    techStack: ["Python", "LangGraph", "Gemini API", "Streamlit", "SQL", "Guardrails"],
+    link: "https://github.com/vinay-ghate/TalkWithDB-AI-Agent"
   },
   {
     id: 3,
-    title: "Japanese Lawyer Assistant",
-    description: "Legal Q&A system over Japanese corpus using RAG with FAISS retriever and ELYZALLaMA-2. Provides concise answers with custom prompts.",
-    techStack: ["Python", "LangChain", "FAISS", "FastAPI", "HuggingFace"],
-    link: "http://v1nay.is-a.dev/"
+    title: "Chikistalaya - AI Healthcare Platform",
+    description: "AI healthcare platform providing LLM workflows with strict data isolation, access control, and tool integrations for provider lookup and cost comparison.",
+    techStack: ["Python", "TypeScript", "SQL", "Docker", "HuggingFace", "Google Maps API"],
+    link: "https://github.com/vinay-ghate/Chikistalaya"
   }
 ];
 
 const MOCK_SKILLS: Skill[] = [
   {
     id: 1,
-    category: "Programming",
-    items: ["Python", "JavaScript", "Node.js", "C#", "Java", "TypeScript"]
+    category: "Languages",
+    items: ["Python", "SQL", "Bash", "Java", "TypeScript"]
   },
   {
     id: 2,
-    category: "ML & Deep Learning",
-    items: ["PyTorch", "TensorFlow", "Transformers", "YOLOv7", "Mask R-CNN", "LayoutLM", "ONNX"]
+    category: "Backend",
+    items: ["FastAPI", "Django", "Flask", "REST APIs", "asyncio", "PostgreSQL", "MySQL", "MongoDB"]
   },
   {
     id: 3,
-    category: "LLMs & NLP",
-    items: ["BERT", "RoBERTa", "LLM Fine-tuning", "LoRA/PEFT", "RAG", "LangChain", "ChromaDB"]
+    category: "GenAI & LLM",
+    items: ["LangGraph", "LangChain", "CrewAI", "MCP (Model Context Protocol)", "Tool Calling", "RAG Pipelines", "ChromaDB", "OpenAI API", "Gemini API", "NVIDIA NIM"]
   },
   {
     id: 4,
-    category: "Backend & APIs",
-    items: ["FastAPI", "Express.js", "REST API", "Docker", "CI/CD"]
+    category: "Data & Infra",
+    items: ["Apache Kafka", "Kubernetes", "Helm", "Strimzi", "Docker", "mTLS", "Prometheus"]
   },
   {
     id: 5,
-    category: "Frontend",
-    items: ["React", "Material-UI", "TailwindCSS", "Vite"]
-  },
-  {
-    id: 6,
-    category: "Cloud & DevOps",
-    items: ["AWS (EC2, S3, Lambda, ECR)", "Docker", "Elasticsearch", "CloudWatch"]
+    category: "Tools",
+    items: ["Git", "Linux", "CI/CD", "n8n", "Zapier", "Confluence API", "Jira API"]
   }
 ];
 
 export const MOCK_EDUCATION = [
   {
     id: 1,
-    institution: "Ahsanullah University of Science and Technology (AUST)",
-    degree: "Bachelor of Science in Computer Science & Engineering",
-    gpa: "3.59/4.00",
-    period: "Apr 2016 – Jan 2021"
-  },
-  {
-    id: 2,
-    institution: "Hermann Gmeiner School, Mirpur",
-    degree: "Higher Secondary Certificate (HSC)",
-    gpa: "5.00/5.00",
-    period: "2013 – 2015"
-  },
-  {
-    id: 3,
-    institution: "Mirpur Bangla School & College",
-    degree: "Secondary School Certificate (SSC)",
-    gpa: "5.00/5.00",
-    period: "2003 – 2013"
+    institution: "Zeal College of Engineering, Pune University",
+    degree: "B.E. in Computer Engineering + Honors in Cyber Security (CGPA: 8.41)",
+    period: "2020 – 2024"
   }
 ];
 
-export const MOCK_RESEARCH = [
-  {
-    id: 1,
-    title: "Bengali Intent Classification with Generative Adversarial BERT",
-    authors: "Vinay Ghate (First Author)",
-    venue: "IEEE Xplore",
-    year: "2023",
-    link: "http://v1nay.is-a.dev/"
-  },
-  {
-    id: 2,
-    title: "Design of an Arrhythmia Classification Algorithm Using 2-D Convolutional Neural Network",
-    authors: "Vinay Ghate (First Author)",
-    venue: "Undergraduate Thesis, AUST",
-    year: "2021",
-    link: "http://v1nay.is-a.dev/"
-  }
-];
+export const MOCK_RESEARCH: any[] = [];
 
 export interface IStorage {
   getExperiences(): Promise<Experience[]>;

@@ -147,49 +147,36 @@ async function seedDatabase() {
 
     await storage.createPersonalInfo({
       name: "Vinay Ghate",
-      role: "AI/ML Engineer",
-      bio: "Passionate AI Engineer specializing in LLMs, OCR, and Document Understanding. Experienced in building high-throughput inference pipelines and scalable ML systems.",
-      email: "vsg0131@gmail.com",
-      phone: "(+880) 1521323549",
+      role: "AI & Backend Engineer",
+      bio: "Python AI engineer with 2 years of experience building agentic AI, LangGraph workflows, and RAG systems integrated with vector databases and production Kafka/Kubernetes foundations.",
+      email: "ghatevinay2@gmail.com",
+      phone: "+91-8605078054",
       github: "https://github.com/vinay-ghate",
       linkedin: "https://linkedin.com/in/vinay-ghate",
-      location: "Mumbai, India",
+      location: "Pune, India",
       avatarUrl: "/images/profile.jpg",
-      resumeUrl: "http://v1nay.is-a.dev/"
+      resumeUrl: "https://v1nay.is-a.dev"
     });
 
     const expData = [
       {
-        title: "Senior Software Engineer",
-        company: "Technonext",
-        period: "Jun 2025 - Present",
+        title: "System Engineer C1 (AI & Backend)",
+        company: "IT Services & Consulting Firm",
+        period: "Nov 2024 – Present",
         description: [
-          "Working on Ticket Parsing for airline/passenger documents, extracting structured fields.",
-          "Building a local LLM-powered parsing pipeline using vLLM for high-throughput inference.",
-          "Designed a heuristic validation layer to verify LLM outputs and reduce hallucinations.",
-          "Developing prompts, post-processing, and evaluation workflows."
+          "Cut project-context lookup time by 40% for 15+ engineers by building tool-using AI agents integrated with Confluence and Jira via MCP.",
+          "Made 500+ team notes searchable through a RAG chat system with semantic retrieval.",
+          "Deployed Strimzi Kafka on Kubernetes with Helm (1M+ events/sec) and secured inter-service traffic with mTLS.",
+          "Reduced event-handling latency by 70% and raised throughput 2x by implementing a caching layer for network events."
         ]
       },
       {
-        title: "Senior AI Engineer",
-        company: "Next Solution Lab",
-        period: "Jun 2023 - Jun 2025",
+        title: "Python Backend Engineering Intern",
+        company: "Software Product Studio",
+        period: "Jun 2024 – Nov 2024",
         description: [
-          "Led English DeepICR: built, trained, and tested Text Detection, Layout Detection, and Data-extraction models.",
-          "Optimized training and inference pipelines via model fine-tuning and parallel processing.",
-          "Enabled GPU multi-training and PDF batching for large documents.",
-          "Standardized evaluation with automated reports for PM/business sign-off.",
-          "Packaged services with Docker and managed deployment on AWS."
-        ]
-      },
-      {
-        title: "AI Engineer",
-        company: "Next Solution Lab",
-        period: "Jun 2022 - Jun 2023",
-        description: [
-          "Built the Japanese Text-recognition training pipeline with augmentation/evaluation.",
-          "DocQA (pre-LLM): Q&A for contracts/invoices documents using BERT/RoBERTa.",
-          "Multilingual OCR: Document OCR for Arabic, Vietnamese, Thai, Indonesian."
+          "Delivered 5+ GenAI and RAG proof-of-concepts with LLM APIs for client projects.",
+          "Developed backend services and REST APIs for an AI-powered content system using Django."
         ]
       }
     ];
@@ -200,22 +187,22 @@ async function seedDatabase() {
 
     const projectData = [
       {
-        title: "Shorol Notes",
-        description: "AI-Powered Note-Taking with voice notes, transcription/summarization, and calendar sync.",
-        techStack: ["React", "TypeScript", "Node.js", "OpenAI API", "Tailwind CSS"],
-        link: "#"
+        title: "Nexyn - Cognitive Memory Middleware for AI Agents",
+        description: "Stateful memory middleware for AI agents featuring a four-layer pipeline (sensory buffer, evaluator, consolidator, decay), scoring memory importance with an LLM and improving recall relevance by 25%.",
+        techStack: ["Python", "FastAPI", "asyncio", "PostgreSQL", "Cognee", "NVIDIA NIM", "Llama 3.1"],
+        link: "https://github.com/vinay-ghate/nexyn-core"
       },
       {
-        title: "AI-Powered Research Agent",
-        description: "ReAct-style tool-using agent with PubMed, Wikipedia, ArXiv, and web search integration.",
-        techStack: ["Python", "FastAPI", "LangChain", "Transformers"],
-        link: "#"
+        title: "TalkWithDB - Agentic NL2SQL Engine",
+        description: "Autonomous agent executing natural language SQL queries on dynamic database schemas with 88% execution accuracy while cutting token usage by 35%.",
+        techStack: ["Python", "LangGraph", "Gemini API", "Streamlit", "SQL", "Guardrails"],
+        link: "https://github.com/vinay-ghate/TalkWithDB-AI-Agent"
       },
       {
-        title: "Japanese Lawyer Assistant",
-        description: "Legal Q&A over Japanese corpus using RAG with instruct LLM.",
-        techStack: ["Python", "LangChain", "FAISS", "FastAPI", "LLaMA-2"],
-        link: "#"
+        title: "Chikistalaya - AI Healthcare Platform",
+        description: "AI healthcare platform providing LLM workflows with strict data isolation, access control, and external tool integrations.",
+        techStack: ["Python", "TypeScript", "SQL", "Docker", "HuggingFace", "Google Maps API"],
+        link: "https://github.com/vinay-ghate/Chikistalaya"
       }
     ];
 
@@ -224,10 +211,11 @@ async function seedDatabase() {
     }
 
     const skillData = [
-      { category: "Languages", items: ["Python", "JavaScript", "Node.js", "C#", "Java"] },
-      { category: "Frameworks", items: ["PyTorch", "TensorFlow", "FastAPI", "React", "LangChain"] },
-      { category: "Cloud & DevOps", items: ["AWS", "Docker", "CI/CD", "EC2", "S3"] },
-      { category: "Tools", items: ["Git", "PostgreSQL", "Elasticsearch", "ChromaDB"] }
+      { category: "Languages", items: ["Python", "SQL", "Bash", "Java", "TypeScript"] },
+      { category: "Backend", items: ["FastAPI", "Django", "Flask", "REST APIs", "asyncio", "PostgreSQL", "MySQL", "MongoDB"] },
+      { category: "GenAI & LLM", items: ["LangGraph", "LangChain", "CrewAI", "MCP", "Tool Calling", "RAG Pipelines", "ChromaDB", "OpenAI API", "Gemini API", "NVIDIA NIM"] },
+      { category: "Data & Infra", items: ["Apache Kafka", "Kubernetes", "Helm", "Strimzi", "Docker", "mTLS", "Prometheus"] },
+      { category: "Tools", items: ["Git", "Linux", "CI/CD", "n8n", "Zapier", "Confluence API", "Jira API"] }
     ];
 
     for (const skill of skillData) {

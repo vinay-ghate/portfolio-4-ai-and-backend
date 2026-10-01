@@ -7,10 +7,10 @@ const options = {
     info: {
       title: 'Modern Portfolio API',
       version: '1.0.0',
-      description: 'API documentation for Vinay Ghate\'s AI/ML Engineer Portfolio',
+      description: 'API documentation for Vinay Ghate\'s AI & Backend Engineer Portfolio',
       contact: {
         name: 'Vinay Ghate',
-        email: 'vsg0131@gmail.com',
+        email: 'ghatevinay2@gmail.com',
         url: 'https://github.com/vinay-ghate'
       },
       license: {
@@ -24,7 +24,7 @@ const options = {
         description: 'Development server'
       },
       {
-        url: 'http://v1nay.is-a.dev',
+        url: 'https://v1nay.is-a.dev',
         description: 'Production server'
       }
     ],
@@ -35,24 +35,24 @@ const options = {
           properties: {
             id: { type: 'integer', example: 1 },
             name: { type: 'string', example: 'Vinay Ghate' },
-            role: { type: 'string', example: 'AI/ML Engineer' },
-            bio: { type: 'string', example: 'Passionate AI Engineer...' },
-            email: { type: 'string', example: 'vsg0131@gmail.com' },
-            phone: { type: 'string', example: '(+880) 1521323549' },
+            role: { type: 'string', example: 'AI & Backend Engineer' },
+            bio: { type: 'string', example: 'Python AI engineer...' },
+            email: { type: 'string', example: 'ghatevinay2@gmail.com' },
+            phone: { type: 'string', example: '+91-8605078054' },
             github: { type: 'string', example: 'https://github.com/vinay-ghate' },
             linkedin: { type: 'string', example: 'https://linkedin.com/in/vinay-ghate' },
-            location: { type: 'string', example: 'Mumbai, India' },
+            location: { type: 'string', example: 'Pune, India' },
             avatarUrl: { type: 'string', example: '/images/profile.jpg' },
-            resumeUrl: { type: 'string', example: 'http://v1nay.is-a.dev/' }
+            resumeUrl: { type: 'string', example: 'https://v1nay.is-a.dev' }
           }
         },
         Experience: {
           type: 'object',
           properties: {
             id: { type: 'integer', example: 1 },
-            title: { type: 'string', example: 'Senior Software Engineer' },
-            company: { type: 'string', example: 'Technonext' },
-            period: { type: 'string', example: 'Jun 2025 – Present' },
+            title: { type: 'string', example: 'System Engineer C1 (AI & Backend)' },
+            company: { type: 'string', example: 'IT Services & Consulting Firm' },
+            period: { type: 'string', example: 'Nov 2024 – Present' },
             description: { 
               type: 'array', 
               items: { type: 'string' },

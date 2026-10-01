@@ -17,15 +17,14 @@ interface CapItem {
   Icon: (props: { on: boolean; label: string }) => React.JSX.Element;
 }
 
-/** Same icon order as the CapabilityIcons strip (SkillsMindMap category order). */
 const ITEMS: CapItem[] = [
-  { key: "comp", label: "Programming", Icon: ComputerIcon },
-  { key: "chip", label: "ML & Deep Learning", Icon: ChipBrainIcon },
-  { key: "sci", label: "LLMs & Agentic AI", Icon: ScienceAiIcon },
+  { key: "comp", label: "Languages", Icon: ComputerIcon },
+  { key: "big", label: "Backend", Icon: BigDataIcon },
+  { key: "sci", label: "GenAI & LLM", Icon: ScienceAiIcon },
   { key: "net", label: "Vector & Search", Icon: ChartNetworkIcon },
-  { key: "big", label: "Backend & Distributed Systems", Icon: BigDataIcon },
-  { key: "usr", label: "Business Analytics", Icon: ChartUserIcon },
-  { key: "admin", label: "DevOps & Cloud", Icon: AdminAltIcon },
+  { key: "chip", label: "Data & Infra", Icon: ChipBrainIcon },
+  { key: "usr", label: "Cloud & Security", Icon: ChartUserIcon },
+  { key: "admin", label: "Tools", Icon: AdminAltIcon },
 ];
 
 /**

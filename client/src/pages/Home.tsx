@@ -81,7 +81,7 @@ export default function Home() {
             >
               <p className="inline-flex items-center gap-2.5 mono-label !text-[13px] md:!text-sm font-semibold text-accent border border-primary/50 bg-primary/10 rounded-full px-5 py-2.5 mb-6 tracking-wide">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" aria-hidden="true" />
-                AI/ML ENGINEER &middot; MUMBAI, INDIA
+                AI & BACKEND ENGINEER &middot; PUNE, INDIA
               </p>
               <div className="flex items-center gap-3 sm:gap-6">
                 <DrawnName />
@@ -178,10 +178,10 @@ export default function Home() {
         {/* ============ STATS ============ */}
         <StatsStrip
           stats={[
-            { value: yearsBuilding, suffix: "+", label: "Years building AI" },
+            { value: 2, suffix: "+", label: "Years building AI" },
             { value: techCount, label: "Production technologies" },
             { value: companyCount, label: "Companies" },
-            { value: postCount, label: "Published essays" },
+            { value: 10, suffix: "+", label: "Hackathons" },
           ]}
         />
 
@@ -329,15 +329,7 @@ export default function Home() {
           </motion.div>
         </section>
 
-        {/* ============ FUN & GAMES ============ */}
-        <section id="games" className="rule-t py-20 md:py-28 cv-auto">
-          <SectionHeading title="Fun & Games" subtitle="Take a break and test your memory" />
-          <div className="flex justify-center">
-            <Suspense fallback={null}>
-              <MemoryFlipCards />
-            </Suspense>
-          </div>
-        </section>
+
 
         {/* ============ CONTACT ============ */}
         <section id="contact" className="rule-t py-20 md:py-28 cv-auto">
